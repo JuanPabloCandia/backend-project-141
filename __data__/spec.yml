@@ -1,0 +1,12 @@
+---
+
+project:
+  language: javascript
+  name: "Gestor de tareas"
+  link: |
+    https://js-task-manager-ru.hexlet.app/
+  summary: "En la práctica aprenderás sobre diseño de bases de datos, PaaS, Rollbar, webpack, PostCSS, ORM, el framework Fastify, plantillas y Bootstrap."
+  artifacts:
+    - __fixtures__
+    - .eslintrc.yml
+    - __tests__

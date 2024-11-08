@@ -1,0 +1,47 @@
+{
+  "name": "@hexlet/project",
+  "version": "0.0.1",
+  "description": "Task Manager",
+  "scripts": {
+    "test": "jest --colors --runInBand --bail",
+    "start": "fastify start server/plugin.js -l info -P"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=18.x"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "dotenv/config",
+      "./jest.setup.js"
+    ],
+    "modulePathIgnorePatterns": [
+      "<rootDir>/code/",
+      "<rootDir>/__tests__/helpers/",
+      "<rootDir>/tmp/"
+    ]
+  },
+  "author": "Hexlet",
+  "dependencies": {
+    "@hexlet/code": "file:code",
+    "fastify": "^4.9.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.20.1",
+    "dotenv": "^16.0.0",
+    "eslint": "^8.22.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jest": "^26.8.7",
+    "eslint-plugin-playwright": "^0.8.0",
+    "jest": "^28.1.3",
+    "lodash": "^4.17.21",
+    "npm-check-updates": "^16.0.5",
+    "playwright-chromium": "^1.20.1",
+    "read-package-json-fast": "^2.0.3",
+    "url-loader": "^4.1.1"
+  },
+  "overrides": {
+    "node-gyp": "^10.0.0"
+  }
+}
